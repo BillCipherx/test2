@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #333333;
+}
+/* ----navbar---- */
+.nav img{
+    height: 75%;
+    border-radius: 100%;
+}
+.nav{
+    position: fixed;
+    height: 9%;
+    display: flex;
+    background-color: #800500;
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 8px;
+    border-color: #B19881;
+}
+.nav h2{
+    color: white;
+    padding-left: 10px;
+}
+.navbar{
+    display: flex;
+    text-align: center;
+}
+.navbar li input{
+    background-color: #131313;
+    border: none;
+    height: 30px;
+    width: 500px;
+}
+.navbar li{
+    list-style: none;
+    padding-left: 60px;
+    font-size: 20px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+/* -------------------- */
+.Photo img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.Categories{
+    background-color: #131313;
+    width: 100%;
+    height: 1000px;
+    grid-template: "Towels Appliances Bedding CoffeeMakers" auto "Furniture Paperproducts Refrigerator Kitchenware" auto / 1fr auto;
+}
+.Categories{
+    background-color: #131313;
+    width: 100%;
+    height: 1000px;
+    padding: 70px;
+    display: grid;
+    grid-template: "Towels Appliances Bedding CoffeeMakers" "Furniture Paperproducts Refrigerator Kitchenware";
+}
+.C{
+    width: 235px;
+    height: 220px;
+    background-position: center;
+    border-radius: 10px;
+    background-size: cover;
+    margin-left: 50px;
+}
+.Towels{
+    grid-area: Towels;
+}
+.Appliances{
+    grid-area: Appliances;
+}
+.Bedding{
+    grid-area: Bedding;
+}
+.CoffeeMakers{
+    grid-area: CoffeeMakers;
+}
+.Furniture{
+    grid-area: Furniture;
+}
+.Paperproducts{
+    grid-area: Paperproducts;
+}
+.Refrigerator{
+    grid-area: Refrigerator;
+}
+.Kitchenware{
+    grid-area: Kitchenware;
+}
