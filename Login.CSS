@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.Container{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}#Search{
+    height: 30px;
+    width: 200px;
+}
+.fa-magnifying-glass{
+    color: white;
+}
+.fa-bars{
+    color: white;
+    display: none;
+    margin-top: 7px;
+    float: right;
+}
+.fa-xmark{
+    color: white;
+    display: none;
+}
+/* accordionbox */
+.accordionbox{
+    /* display: flex; */
+    display: none;
+ }
+ .accordion {
+   position: fixed;
+   top: 70px;
+    width: 100%;
+    background-color: rgb(255, 20, 75);
+    z-index: 3;
+ }
+  .contentBx {
+    position: relative;
+    /* margin: 20px; */
+    width: 100%;
+ }
+ .label {
+    position: relative;
+    background-color:  rgb(255, 20, 75);
+    color: white;
+    padding-top: 15px;
+    padding-left: 20px;
+    cursor: pointer;
+    height: 35px;
+ }
+ .label a{
+    text-decoration: none;
+    color: white;
+ }
+ .label::before {
+    content: '+';
+    position: absolute;
+    /* top: 20%; */
+    right: 20px;
+ }
+ .content a{
+   color: white;
+   text-decoration: none;
+   padding-left: 30px;
+ }
+  .contentBx.active .label::before {
+    content: '-';
+ }
+ .content {
+    position: relative;
+    padding: 10px 20px;
+    /* overflow: hidden; */
+    /* overflow-y: auto; */
+    display: none;
+ }
+ .contentBx.active .content {
+    display: block;
+    height: auto;
+    padding: 10px;
+    transition-delay: 5s;
+ }
+
+.navbar{
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color:  rgb(255, 20, 75);
+    padding-left: 40px;
+    padding-right: 40px;
+    top: 0px;
+    z-index: 2;
+}
+.logo{
+    width: 40px;
+    cursor: pointer;
+    /* border-radius: 50px; */
+}
+.navbar h2{
+    color: #fff;
+    padding-left: 10px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+.Container .bimg{
+    padding-top: 5%;
+    background-position: center; 
+    height: 30%;
+    color: white;
+}
+.title{
+    background-color: rgba(0, 0, 0, 0.6);
+    display:inline-block;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+.Container .bimg h1{
+    text-align: left;
+}
+
+/* Hover start*/
+.hover1 {
+    display: none;
+ }
+ .hover1 a{
+     display: block;
+     padding-top: 10px;
+     padding-bottom: 10px;
+ }
+ .courses:hover .hover1 {
+     position: absolute;
+     width: 150px;
+     display: block;
+     text-align: center; 
+     background-color: rgb(255, 20, 75);
+     border-radius: 12px;
+ }
+ .hover1 a:hover{
+     text-decoration-line:underline;
+ }
+ .hover2 {
+     display: none;
+ }
+ .hover2 a{
+     display: block;
+     padding-top: 10px;
+     padding-bottom: 10px;
+ }
+ .About:hover .hover2 {
+     position: absolute;
+     width: 150px;
+     display: block;
+     text-align: center; 
+     background-color: rgb(255, 20, 75);
+     border-radius: 12px;
+ }
+ .hover2 a:hover{
+     text-decoration-line:underline;
+ }
+ /* Hover end*/
+
+
+/* Login box */
+.Login{
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    box-shadow: 5px 5px 20px 5px #888888;
+}
+.Login h1{
+    padding: 20px;
+}
+.Gmail{
+    margin-left: 100px;
+}
+.Gmail input{
+    height: 30px;
+    width: 300px;
+}
+.Login p{
+    font-size: 10px;
+    padding-left: 100px;
+    cursor: pointer;
+}
+.Log{
+    height: 40px;
+    margin-left: 100px;
+    padding-left: 125px;
+    padding-right: 130px;
+    border-radius: 5px;
+    background-color: rgb(255, 20, 75);
+    font-size: 15px;
+    color: white;
+    border-color: rgb(255, 20, 75);
+}
+.Login h5{
+    margin-left: 240px;
+}
+.back{
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 300px;
+    list-style: none;
+}
+.facebook{
+    height: 40px;
+    margin-left: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgb(0, 162, 255);
+    font-size: 15px;
+    color: white;
+    border-color:  rgb(0, 162, 255);
+}
+.Google{
+    height: 40px;
+    margin-left: 100px;
+    padding-left: 60px;
+    padding-right: 61px;
+    background-color: rgb(0, 162, 255);
+    font-size: 15px;
+    color: white;
+    border-color:  rgb(0, 162, 255);
+}
+.Login .Team{
+    padding-left: 120px;
+}
+.Login .Service{
+    padding-left: 190px;
+}
+hr{
+    margin-left: 170px;
+    margin-right: 170px;
+}
+.Sing{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.Sing button{
+    border: none;
+}
+.select{
+    margin-left: 100px;
+}
+.select select{
+    width: 97px;
+}
+.Gender{
+    display: flex;
+    margin-left: 50px;
+    padding-left: 50px;
+}
+#Singin{
+    display: none;
+}
+
+@media (max-width: 992px){
+    .Login{
+    position: absolute;
+    left: 20%;
+    /* margin-top: 70px; */
+    width: 70%;
+    box-shadow: none;
+    }
+    hr{
+        width: 150px;
+    }
+    .fa-bars{
+        display: block;
+    }
+    .navbar{
+        height: 90px;
+    }
+    #Search{
+        display: none;
+    }
+    .fa-magnifying-glass{
+        display: none;
+    }
+    .navbar .logo{
+        display: none;
+    }
+    .navbar .Home{
+        display: none;
+    }
+    .navbar .courses{
+        display: none;
+    }
+    .navbar .About{
+        display: none;
+    }
+    .navbar .Loginbar{
+        display: none;
+    }
+    .accordion{
+        top: 90px;
+    }
+}
+@media (max-width: 500px){
+    .Login{
+        position: absolute;
+        left: 10%;
+        margin-top: 70px;
+        width: 50%;
+        box-shadow: none;
+        }
+        hr{
+            width: 150px;
+        }
+        .Log{
+        margin-left: 10px;
+        }
+        .facebook{
+            height: 40px;
+            width: 140%;
+            margin-left: 10px;
+        }
+        .Google{
+            height: 40px;
+            width: 140%;
+            margin-left: 10px;
+        }
+        .Gmail{
+            margin-left: 10px;
+        }
+        .Login h5{
+            margin-left: 140px;
+        }
+        .Login .Team{
+            padding-left: 30px;
+        }
+        .Login .Service{
+            width: 100%;
+            padding-left: 100px;
+        }
+        .Sing{
+            width: 100%;
+            margin-left: -5px;
+            margin-right: 50px;
+        }
+        hr{
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        .select{
+            margin-left: 10px;
+        }
+        .Gender{
+            margin-left: 5px;
+            padding-left: 5px;
+        }
+        .back{
+            margin-top: 45px;
+            margin-left: 100px;
+        }
+        .navbar h2{
+            font-size: 20px;
+        }
+        .navbar{
+            height: 70px;
+        }
+        .accordion{
+            top: 70px;
+        }
+    
+}
